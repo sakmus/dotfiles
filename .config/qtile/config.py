@@ -4,7 +4,7 @@ from libqtile.layout.floating import Floating
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from colors import nord
-from bars import bar1 as bar
+import bars
 
 mod = "mod4"
 terminal = "alacritty"
@@ -153,7 +153,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        top = bar
+        top = bars.bar1
     ),
 ]
 
