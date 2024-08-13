@@ -20,7 +20,7 @@ Web Browser | firefox, brave-bin
 Code Editor | vsodium-bin, neovim
 File Manager | nemo
 System Monitor | htop
-Mouse Utility | unclutter
+Others | unclutter, lxappearance
 
 ## Additional Installation
 - powerlevel10k (ZSH theme)

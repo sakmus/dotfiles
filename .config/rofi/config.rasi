@@ -1,0 +1,11 @@
+configuration {
+    modes: "drun,window,run";
+    font: "JetBrainsMono Nerd Font Regular 14";
+    display-drun: "Applications:";
+    display-window: "Windows:";
+    display-run: "Command:";
+    show-icons: true;
+    icon-theme: "Zafiro-Nord-Black";
+}
+
+@theme "~/.local/share/rofi/themes/rounded-nord-dark.rasi"
