@@ -1,13 +1,10 @@
-
-import os
 from libqtile import layout, qtile
 from libqtile.layout.bsp import Bsp
 from libqtile.layout.floating import Floating
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from colors import nord
-import unicodes
-import bars
+from bars import bar1 as bar
 
 mod = "mod4"
 terminal = "alacritty"
@@ -156,7 +153,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        top = bars.bar2
+        top = bar
     ),
 ]
 
