@@ -5,53 +5,28 @@
     "height": 34,
     "modules-left": [
         "clock",
-		"temperature"
-        // "hyprland/workspaces"
+	"temperature"
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
-		//"custom/notification",
         "tray",
-        //"temperature",
         "network",
         "wireplumber",
         "battery"
-        //"custom/power"
     ],
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
             "default": "",
-            //"1": "1",
-            //"2": "2",
-            //"3": "3",
-            //"4": "4",
-            //"5": "5",
-            //"6": "6",
-            //"7": "7",
-            //"8": "8",
-            //"9": "9",
             "active": "",
             "urgent": "󱓻"
         },
         "persistent-workspaces": {
             "*": 3
         }
-    },
-    "hyprland/window": {
-	    "format": "{class}",
-	    "rewrite": {
-		    "(.*) - Mozilla Firefox": "Mozilla Firefox",
-		    "(.*) - Brave": "Brave Browser"
-	    }
-    },
-    "memory": {
-        "interval": 5,
-        "format": "󰍛 {}%",
-        "max-length": 10
     },
     "tray": {
         "spacing": 10
@@ -94,11 +69,6 @@
         "on-click-right": "pwvucontrol",
         "scroll-step": 1
     },
-    "custom/logo": {
-        "format": "  ",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
-    },
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": {
@@ -136,30 +106,6 @@
         },
 		"format-alt": "󱐌 {power} W",
         "tooltip": false
-    },
-    "custom/power": {
-        "format": "󰤆",
-        "tooltip": false,
-        "on-click": "wlogout"
-    },
-	  "custom/notification": {
-    "tooltip": false,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  },
+    }
+  }
 }
