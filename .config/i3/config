@@ -6,11 +6,9 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3exit lock --nofork
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom -b
-# exec --no-startup-id polybar
+exec --no-startup-id polybar
 exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id flameshot
-exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
 
 # Control audio and brightness
 set $refresh_i3status killall -SIGUSR1 i3status
