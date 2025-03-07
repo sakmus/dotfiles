@@ -20,7 +20,7 @@ add_newline = true
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
 success_symbol ='[❯](4)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-error_symbol = '[❯](8)'
+error_symbol = '[❯](1)'
 
 # Disable the package module, hiding it from the prompt completely
 [package]
@@ -30,22 +30,23 @@ disabled = true
 symbol = ' '
 
 [cmd_duration]
-format = "[$duration]($style)"
+format = "[$duration](2)"
 
 [hostname]
-ssh_only = true
+ssh_only = false
+style = "6"
 format = "@[$ssh_symbol$hostname]($style)"
 
 [username]
 show_always = true
-format = "[$user]($style)"
+format = "[$user](5)"
 
 [directory]
 format = " [$path]($style)[$read_only]($read_only_style) "
 repo_root_format = " [$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 truncation_length = 4
 truncation_symbol = '…/'
-home_symbol = ' '
+# home_symbol = ' '
 read_only = ' '
 
 [git_branch]
