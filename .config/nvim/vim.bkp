@@ -1,0 +1,16 @@
+set number
+set relativenumber
+set mouse=a
+set cursorline
+
+call plug#begin()
+
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+
+Plug 'nvim-lualine/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'nvim-tree/nvim-web-devicons'
+
+call plug#end()
+

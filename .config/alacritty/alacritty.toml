@@ -1,0 +1,30 @@
+[general]
+live_config_reload = true
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+ [window]
+opacity = 0.8
+blur = true
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
+size  = 14
+
+[colors]
+[colors.primary]
+foreground = "#c6c8d1"
+background = "#161821"
+
+[colors.normal]
+black = "#161821"
+red = "#e27878"
+green = "#b4be82"
+yellow = "#e2a478"
+blue = "#84a0c6"
+magenta = "#a093c7"
+cyan = "#89b8c2"
+white = "#c6c8d1"
+
